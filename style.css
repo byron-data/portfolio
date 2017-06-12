@@ -1,14 +1,22 @@
-#container{
-    margin: 0 auto;
-    max-width: 1200px;
+body {
+	margin:0;
+	padding:0;
 }
 
-header {
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+#header {
     width: 94%;
     padding: 3%;
     background-color: #263547;
 }
-header #title {
+#header #title {
     font-size: 50px;
     color: #fff;
 }
@@ -32,31 +40,46 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-#content {
-    float: left;
+#footer {
+	clear:both;
+	float:left;
+	width:94%;
     padding: 3%;
-    width: 43.5%;
-    background-color: #eee;
-    border-style: solid;
-    border-width: 3px;
-    border-color: red;
-}
-
-aside {
-    float: right;
-    padding: 3%;
-    width: 43.5%;
-    background-color: #eee;
-    border-style: solid;
-    border-width: 3px;
-    border-color: red;
-}
-
-footer{
-    width: 94%;
-    padding: 3%;
-    background-color: #263547;
-    border-top: 5px solid #red;
     color: #fff;
-    text-align: center;
+    background-color: #263547;
+}
+
+/* Start of Column CSS */
+#container2 {
+	clear:left;
+	float:left;
+	width:100%;
+	overflow:hidden;
+	background:#eee; /* column 2 background colour */
+}
+
+#container1 {
+	float:left;
+	width:100%;
+	position:relative;
+	right:50%;
+	background:#eee; /* column 1 background colour */
+}
+
+#col1 {
+	float:left;
+	width:46%;
+	position:relative;
+	left:53%;
+	overflow:hidden;
+    padding: 15px 1.5% 15px 1.5% ;
+}
+
+#col2 {
+	float:left;
+	width:46%;
+	position:relative;
+	left:56%;
+	overflow:hidden;
+    padding: 15px 1.5% 15px 1.5% ;
 }
